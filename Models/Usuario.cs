@@ -18,6 +18,7 @@ namespace App_Web_Backend.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar senha!")]
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o perfil!")]
